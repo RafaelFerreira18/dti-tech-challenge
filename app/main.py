@@ -1,4 +1,3 @@
-# main.py
 from app.controllers.generoController import GeneroController
 from app.controllers.jogoController import JogoController
 from app.controllers.menuController import MenuController
