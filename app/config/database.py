@@ -1,3 +1,3 @@
 from peewee import SqliteDatabase
 
-db = SqliteDatabase('data/playbase_db.sqlite')
+db = SqliteDatabase('app\config\data\playbase_db.sqlite')
