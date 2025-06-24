@@ -6,7 +6,8 @@ class GeneroService:
         genero = self.genero_repository.buscar_por_nome(nome)
         if not genero:
             genero = self.genero_repository.criar(nome)
-        return print(genero.nome)
+        print(genero.nome)
+        return genero
 
     def listar_generos(self):
         generos = self.genero_repository.listar_todos()

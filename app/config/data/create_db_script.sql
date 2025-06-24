@@ -1,15 +1,15 @@
 CREATE TABLE jogo (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome TEXT NOT NULL,
+    nome TEXT NOT NULL UNIQUE,
     descricao TEXT,
     empresa TEXT,
-    ano_lancamento TEXT NOT NULL,
-    vendas_globais REAL
+    data_lancamento TEXT NOT NULL,
+    preco INTEGER
 );
 
 CREATE TABLE genero (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome TEXT NOT NULL
+    nome TEXT NOT NULL UNIQUE
 );
 
 CREATE TABLE jogo_genero (
