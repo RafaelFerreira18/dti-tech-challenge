@@ -1,5 +1,4 @@
-from models.genero import Genero
-from peewee import DoesNotExist
+from app.models import Genero
 
 
 class GeneroRepository:
