@@ -1,7 +1,14 @@
+from app.config.database import db
 from app.controllers import GeneroController, JogoController, MenuController
 from app.repositories import GeneroRepository, JogoRepository
 from app.services import GeneroService, JogoService
 
+
+def initialize_database():
+    db.connect()
+
+def close_database():
+    db.close()
 
 def main():
     genero_repository = GeneroRepository()
@@ -16,4 +23,6 @@ def main():
     menu.menu()
 
 if __name__ == "__main__":
+    initialize_database()
     main()
+    close_database()

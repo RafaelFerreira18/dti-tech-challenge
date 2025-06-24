@@ -17,21 +17,15 @@ class GeneroController:
         elif opcao == "2":
             nome = input("Nome do gênero: ")
             genero = self.genero_service.buscar_ou_criar(nome)
-            print(genero)
 
         elif opcao == "3":
-            id_editar = int(input("ID do gênero a ser editado: "))
+            nome_editar = input("Nome do gênero a ser editado: ")
             novo_nome = input("Novo nome do gênero: ")
-            genero = self.genero_service.buscar_por_id(id_editar)
-            if genero:
-                genero.nome = novo_nome
-                self.genero_service.atualizar_genero(genero)
-            else:
-                print("Gênero não encontrado.")
+            self.genero_service.atualizar_genero(nome_editar, novo_nome)
 
         elif opcao == "4":
-            id_excluir = int(input("ID do gênero a ser excluído: "))
-            self.genero_service.remover_genero(id_excluir)
+            nome_excluir = input("Nome do gênero a ser excluído: ")
+            self.genero_service.remover_genero(nome_excluir)
 
         elif opcao == "0":
             return
