@@ -13,7 +13,8 @@ class JogoRepository:
 
     def buscar_jogo_por_nome(self, nome):
         jogo = Jogo.get_or_none(Jogo.nome == nome)
-        return print(jogo) if jogo else None
+        print(jogo) if jogo else None
+        return jogo
 
     def adicionar_jogo(self, nome, descricao, data_lancamento, generos, empresa, preco):
         jogo = Jogo.create(nome=nome, descricao=descricao, data_lancamento=data_lancamento, empresa=empresa, preco=preco)

@@ -6,11 +6,12 @@ class GeneroService:
         genero = self.genero_repository.buscar_por_nome(nome)
         if not genero:
             genero = self.genero_repository.criar(nome)
-        print(genero.nome)
         return genero
 
     def listar_generos(self):
         generos = self.genero_repository.listar_todos()
+        if not generos:
+            print("Nenhum gênero encontrado.")
         for genero in generos:
             print(genero.nome)
 
@@ -18,8 +19,16 @@ class GeneroService:
         print(f"Listando jogos do gênero: {genero.nome}")
         return self.genero_repository.listar_jogos(genero)
 
-    def atualizar_genero(self, genero, novo_nome):
+    def atualizar_genero(self, nome_antigo, novo_nome):
+        genero = self.genero_repository.buscar_por_nome(nome_antigo)
+        if not genero:
+            raise ValueError("Gênero não encontrado para atualizar.")
+        if self.genero_repository.buscar_por_nome(novo_nome):
+            raise ValueError("Já existe um gênero com esse nome.")
         return self.genero_repository.atualizar(genero, novo_nome)
-    
-    def remover_genero(self, generoNome):
-        return self.genero_repository.remover(generoNome)
+
+    def remover_genero(self, nome):
+        genero = self.genero_repository.buscar_por_nome(nome)
+        if not genero:
+            raise ValueError("Gênero não encontrado para remoção.")
+        return self.genero_repository.remover(nome)
