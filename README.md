@@ -44,8 +44,6 @@ Esta aplicação é um sistema simples de gerenciamento de **jogos e gêneros**,
   - Obrigatório: NÃO
   - Exemplo: 79.90
 
-![Modelagem do banco](assets/ddl_playbase.png)
-
 ---
 
 ## 💻 Linguagem e Tecnologias Utilizadas
@@ -64,8 +62,8 @@ Esta aplicação é um sistema simples de gerenciamento de **jogos e gêneros**,
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/RafaelFerreira18/dti-tech-challenge.git
-   cd dti-tech-challenge
+   git clone https://github.com/seu-usuario/seu-repo.git
+   cd seu-repo
    ```
 
 2. Crie e ative um ambiente virtual:
@@ -84,18 +82,18 @@ Esta aplicação é um sistema simples de gerenciamento de **jogos e gêneros**,
 
 ---
 
-## 🐳 Executando com Docker
+## 🐳 Executando com Docker Compose
 
-1. Compile a imagem:
+1. Compile a imagem e prepare o ambiente:
 
    ```bash
-   docker build -t playbase .
+   docker-compose up --build
    ```
 
-2. Execute o container:
+2. Execute a aplicação em modo interativo:
 
    ```bash
-   docker run -it playbase
+   docker-compose run app
    ```
 
 > Certifique-se de que os arquivos `Dockerfile`, `requirements.txt` e a pasta `app/` estão no mesmo diretório.
@@ -159,6 +157,8 @@ python -m unittest discover tests
 ```
 
 ---
+
+## 
 
 ## 📂 Estrutura de Pastas
 
