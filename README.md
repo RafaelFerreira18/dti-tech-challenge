@@ -89,13 +89,13 @@ Esta aplicação é um sistema simples de gerenciamento de **jogos e gêneros**,
 1. Compile a imagem:
 
    ```bash
-   docker build -t jogo-system .
+   docker build -t playbase .
    ```
 
 2. Execute o container:
 
    ```bash
-   docker run -it jogo-system
+   docker run -it playbase
    ```
 
 > Certifique-se de que os arquivos `Dockerfile`, `requirements.txt` e a pasta `app/` estão no mesmo diretório.
