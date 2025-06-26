@@ -7,6 +7,13 @@ Esta aplicação é um sistema simples de gerenciamento de **jogos e gêneros**,
 
 ---
 
+## 🗄️ Script SQL para Criação do Banco de Dados
+
+O arquivo de script SQL para criação do banco de dados está localizado em:
+- app/config/data/create_db_script.sql
+
+---
+
 ## JOGO (RECURSO PRINCIPAL)
 
 ▸ PROPRIEDADES E ESPECIFICAÇÕES
@@ -43,6 +50,8 @@ Esta aplicação é um sistema simples de gerenciamento de **jogos e gêneros**,
   - Formato: R$ 0.00
   - Obrigatório: NÃO
   - Exemplo: 79.90
+
+![Modelagem do banco](assets/ddl_playbase.png)
 
 ---
 
