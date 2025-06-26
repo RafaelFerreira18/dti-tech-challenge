@@ -43,7 +43,12 @@ class JogoController:
                 generos_input = input("Gêneros (separados por vírgula): ").strip()
                 if not generos_input:
                     raise ValueError("Informe pelo menos um gênero.")
-                generos = [self.genero_service.buscar_ou_criar(g.strip()) for g in generos_input.split(",")]
+                generos_list = [g.strip() for g in generos_input.split(",") if g.strip()]
+                
+                if not generos_list:
+                    raise ValueError("Informe pelo menos um gênero válido.")
+
+                generos = [self.genero_service.buscar_ou_criar(g) for g in generos_list]
 
                 empresa = input("Empresa desenvolvedora: ").strip()
                 if not empresa:

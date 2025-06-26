@@ -55,13 +55,13 @@ class TestJogoService(unittest.TestCase):
     
     def test_buscar_jogo_por_nome_inexistente(self):
         nome = "God of War"
-        self.jogo_repository.buscar_jogo_por_nome.return_value = None
+        self.jogo_repository.buscar_jogo_por_nome.side_effect = ValueError("Jogo não encontrado.")
 
         with self.assertRaises(ValueError) as context:
             self.jogo_service.buscar_jogo_por_nome(nome)
 
         self.assertEqual(str(context.exception), "Jogo não encontrado.")
-    
+
     def test_atualizar_jogo_com_sucesso(self):
         nome_antigo = "God of War"
         novo_nome = "God of War: Ragnarok"

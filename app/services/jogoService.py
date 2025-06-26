@@ -6,13 +6,8 @@ class JogoService:
         return self.jogo_repository.listar_jogos()
 
     def buscar_jogo_por_nome(self, nome):
-        jogo = self.jogo_repository.buscar_jogo_por_nome(nome)
-        if not jogo:
-            raise ValueError("Jogo não encontrado.")
-        else:
-            print(jogo)
-            return jogo
-
+        return self.jogo_repository.buscar_jogo_por_nome(nome)
+        
     def adicionar_jogo(self, nome, descricao, data, generos, empresa, preco):
         if self.jogo_repository.buscar_jogo_por_nome(nome):
             raise ValueError("Já existe um jogo com esse nome.")

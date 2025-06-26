@@ -20,13 +20,8 @@ class GeneroService:
         return self.genero_repository.listar_jogos(genero)
 
     def atualizar_genero(self, nome_antigo, novo_nome):
-        genero = self.genero_repository.buscar_por_nome(nome_antigo)
-        if not genero:
-            raise ValueError("Gênero não encontrado para atualizar.")
-        if self.genero_repository.buscar_por_nome(novo_nome):
-            raise ValueError("Já existe um gênero com esse nome.")
-        return self.genero_repository.atualizar(genero, novo_nome)
-
+        return self.genero_repository.atualizar(nome_antigo, novo_nome)
+    
     def remover_genero(self, nome):
         genero = self.genero_repository.buscar_por_nome(nome)
         if not genero:

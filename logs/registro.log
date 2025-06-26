@@ -1,0 +1,133 @@
+2025-06-26 09:29:31,510 [INFO] Listando todos os jogos.
+2025-06-26 09:29:45,809 [INFO] Jogo encontrado: Expedition 33
+2025-06-26 09:30:48,106 [ERROR] Jogo 'dfasdodaso' não encontrado.
+2025-06-26 09:31:47,070 [ERROR] Jogo 'dsaf,.asçdfzx' nao encontrado.
+2025-06-26 09:35:15,788 [ERROR] Jogo 'dasdoasfkoa' nao encontrado.
+2025-06-26 09:36:03,378 [ERROR] Jogo 'sdadafzcvxz' nao encontrado.
+2025-06-26 09:37:28,636 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:37:28,637 [INFO] Gênero 'Aventura' encontrado.
+2025-06-26 09:37:35,722 [ERROR] Jogo 'dasdsoafkoas' nao encontrado.
+2025-06-26 09:37:35,732 [INFO] Adicionando jogo: dasdsoafkoas
+2025-06-26 09:38:30,753 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:38:30,754 [INFO] Gênero 'Aventura' encontrado.
+2025-06-26 09:38:37,153 [INFO] Jogo encontrado: Expedition 33
+2025-06-26 09:38:37,178 [INFO] Jogo atualizado: Teste
+2025-06-26 09:41:37,240 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:41:37,240 [INFO] Gênero 'Turno' encontrado.
+2025-06-26 09:41:42,431 [INFO] Jogo encontrado: Teste
+2025-06-26 09:41:42,458 [INFO] Jogo atualizado de 'Teste' para 'Expedition 33'.
+2025-06-26 09:41:53,178 [INFO] Jogo encontrado: Expedition 33
+2025-06-26 09:41:53,186 [INFO] Jogo 'Expedition 33' removido com sucesso.
+2025-06-26 09:42:42,992 [INFO] Listando todos os gêneros.
+2025-06-26 09:43:01,928 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:43:22,447 [WARNING] Gênero 'djsaidai' não encontrado.
+2025-06-26 09:48:00,641 [WARNING] Gênero 'sjdnanjkfnajk' não encontrado.
+2025-06-26 09:48:00,647 [INFO] Gênero 'sjdnanjkfnajk' criado com sucesso.
+2025-06-26 09:48:23,819 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:48:23,820 [WARNING] Gênero 'Teste1' não encontrado.
+2025-06-26 09:48:23,821 [WARNING] Gênero '1' não encontrado.
+2025-06-26 09:48:23,821 [ERROR] Gênero '1' não encontrado para atualização.
+2025-06-26 09:48:23,822 [WARNING] Gênero 'Teste1' não encontrado.
+2025-06-26 09:50:17,801 [ERROR] Gênero 'sdadasxvzxczxas' não encontrado.
+2025-06-26 09:50:17,807 [INFO] Gênero 'sdadasxvzxczxas' criado com sucesso.
+2025-06-26 09:51:18,773 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:51:18,773 [INFO] Gênero 'dosadolafozx' encontrado.
+2025-06-26 09:51:18,774 [INFO] Gênero '1' encontrado.
+2025-06-26 09:51:18,774 [ERROR] Gênero '1' não encontrado para atualização.
+2025-06-26 09:51:18,774 [INFO] Gênero 'dosadolafozx' encontrado.
+2025-06-26 09:51:21,666 [INFO] Listando todos os gêneros.
+2025-06-26 09:51:31,427 [INFO] Gênero 'MOBA' encontrado.
+2025-06-26 09:51:31,428 [INFO] Gênero 'sadasdas' encontrado.
+2025-06-26 09:51:31,428 [INFO] Gênero '3' encontrado.
+2025-06-26 09:51:31,428 [ERROR] Gênero '3' não encontrado para atualização.
+2025-06-26 09:51:31,429 [INFO] Gênero 'sadasdas' encontrado.
+2025-06-26 09:52:37,944 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:52:37,945 [INFO] Gênero 'dasikxazizxcmzx' encontrado.
+2025-06-26 09:52:37,945 [INFO] Gênero '1' encontrado.
+2025-06-26 09:52:37,946 [ERROR] Gênero '1' não encontrado para atualização.
+2025-06-26 09:54:00,593 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:54:00,593 [ERROR] Gênero 'doasdoasodaodas' não encontrado.
+2025-06-26 09:54:00,594 [ERROR] Gênero '1' não encontrado.
+2025-06-26 09:54:00,594 [ERROR] Gênero '1' não encontrado para atualização.
+2025-06-26 09:55:34,757 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:55:34,758 [ERROR] Gênero '1' não encontrado.
+2025-06-26 09:55:34,758 [ERROR] Gênero '1' não encontrado para atualização.
+2025-06-26 09:56:24,781 [INFO] Gênero 'Acao' encontrado.
+2025-06-26 09:56:24,782 [ERROR] Gênero 'dasdaskdaskdask' não encontrado.
+2025-06-26 09:56:24,788 [INFO] Gênero atualizado de 'Acao' para 'dasdaskdaskdask'.
+2025-06-26 09:56:38,494 [INFO] Gênero 'Turno' encontrado.
+2025-06-26 09:56:38,494 [INFO] Gênero 'Turno' encontrado.
+2025-06-26 09:56:38,495 [ERROR] Gênero 'Turno' não pode ser removido porque está associado a jogos.
+2025-06-26 09:57:42,838 [INFO] Gênero 'RPG' encontrado.
+2025-06-26 09:57:42,838 [INFO] Gênero 'RPG' encontrado.
+2025-06-26 09:57:42,844 [INFO] Gênero 'RPG' removido com sucesso.
+2025-06-26 09:57:51,816 [INFO] Listando todos os jogos.
+2025-06-26 09:57:56,808 [ERROR] Jogo 'Expedition 33' nao encontrado.
+2025-06-26 09:58:03,710 [INFO] Jogo encontrado: dasdsoafkoas
+2025-06-26 09:58:56,606 [ERROR] Jogo 'dasdas' nao encontrado.
+2025-06-26 09:59:00,433 [ERROR] Jogo 'print(jogo)' nao encontrado.
+2025-06-26 09:59:02,956 [INFO] Listando todos os jogos.
+2025-06-26 09:59:08,052 [INFO] Jogo encontrado: dasdsoafkoas
+2025-06-26 09:59:38,355 [ERROR] Gênero 'RPG' não encontrado.
+2025-06-26 09:59:38,363 [INFO] Gênero 'RPG' criado com sucesso.
+2025-06-26 09:59:38,363 [INFO] Gênero 'Turno' encontrado.
+2025-06-26 09:59:45,696 [ERROR] Jogo 'Expedition 33' nao encontrado.
+2025-06-26 09:59:45,702 [INFO] Adicionando jogo: Expedition 33
+2025-06-26 09:59:48,906 [INFO] Listando todos os jogos.
+2025-06-26 10:00:13,297 [ERROR] Gênero 'Acao' não encontrado.
+2025-06-26 10:00:13,303 [INFO] Gênero 'Acao' criado com sucesso.
+2025-06-26 10:00:13,304 [INFO] Gênero 'RPG' encontrado.
+2025-06-26 10:00:13,304 [INFO] Gênero 'Turno' encontrado.
+2025-06-26 10:00:22,286 [INFO] Jogo encontrado: dasdsoafkoas
+2025-06-26 10:00:22,316 [INFO] Jogo atualizado de 'dasdsoafkoas' para 'Baldurs Gate 3'.
+2025-06-26 10:00:24,824 [INFO] Listando todos os jogos.
+2025-06-26 10:00:44,422 [INFO] Jogo encontrado: Baldurs Gate 3
+2025-06-26 10:00:44,431 [INFO] Jogo 'Baldurs Gate 3' removido com sucesso.
+2025-06-26 10:00:46,230 [INFO] Listando todos os jogos.
+2025-06-26 10:03:05,951 [ERROR] Gênero 'daskasodkas.doasolczxcm' não encontrado.
+2025-06-26 10:03:05,958 [INFO] Gênero 'daskasodkas.doasolczxcm' criado com sucesso.
+2025-06-26 10:03:05,959 [WARNING] Nome do gênero não informado.
+2025-06-26 10:03:05,964 [INFO] Gênero '' criado com sucesso.
+2025-06-26 10:04:09,984 [ERROR] Gênero '.cxz.cc;zxc' não encontrado.
+2025-06-26 10:04:09,990 [INFO] Gênero '.cxz.cc;zxc' criado com sucesso.
+2025-06-26 10:08:06,500 [ERROR] Gênero '"ação' não encontrado.
+2025-06-26 10:08:06,506 [INFO] Gênero '"ação' criado com sucesso.
+2025-06-26 10:08:06,507 [ERROR] Gênero 'aventura' não encontrado.
+2025-06-26 10:08:06,513 [INFO] Gênero 'aventura' criado com sucesso.
+2025-06-26 10:08:06,514 [ERROR] Gênero 'comédia"' não encontrado.
+2025-06-26 10:08:06,519 [INFO] Gênero 'comédia"' criado com sucesso.
+2025-06-26 10:08:13,746 [ERROR] Jogo 'dasdas' nao encontrado.
+2025-06-26 10:08:13,752 [INFO] Adicionando jogo: dasdas
+2025-06-26 10:08:49,665 [INFO] Gênero '"ação' encontrado.
+2025-06-26 10:08:49,665 [INFO] Gênero 'comédia"' encontrado.
+2025-06-26 10:08:54,229 [ERROR] Jogo 'dasld,alzxc,llz,x' nao encontrado.
+2025-06-26 10:08:54,234 [INFO] Adicionando jogo: dasld,alzxc,llz,x
+2025-06-26 10:09:11,727 [ERROR] Gênero '""' não encontrado.
+2025-06-26 10:09:11,733 [INFO] Gênero '""' criado com sucesso.
+2025-06-26 10:09:32,322 [ERROR] Jogo 'dasomvzxkcmkzxc' nao encontrado.
+2025-06-26 10:09:32,327 [INFO] Adicionando jogo: dasomvzxkcmkzxc
+2025-06-26 10:13:13,136 [INFO] Gênero '""' encontrado.
+2025-06-26 10:13:17,954 [ERROR] Jogo 'DSOAKDASKO' nao encontrado.
+2025-06-26 10:13:17,960 [INFO] Adicionando jogo: DSOAKDASKO
+2025-06-26 10:13:22,823 [INFO] Listando todos os jogos.
+2025-06-26 10:13:38,021 [INFO] Gênero '""' encontrado.
+2025-06-26 10:13:38,022 [INFO] Gênero '""' encontrado.
+2025-06-26 10:13:38,022 [ERROR] Gênero '""' não pode ser removido porque está associado a jogos.
+2025-06-26 10:13:47,398 [INFO] Jogo encontrado: DSOAKDASKO
+2025-06-26 10:13:47,408 [INFO] Jogo 'DSOAKDASKO' removido com sucesso.
+2025-06-26 10:13:57,093 [INFO] Jogo encontrado: dasomvzxkcmkzxc
+2025-06-26 10:13:57,100 [INFO] Jogo 'dasomvzxkcmkzxc' removido com sucesso.
+2025-06-26 10:14:07,169 [INFO] Gênero '""' encontrado.
+2025-06-26 10:14:07,169 [INFO] Gênero '""' encontrado.
+2025-06-26 10:14:07,170 [ERROR] Gênero '""' não pode ser removido porque está associado a jogos.
+2025-06-26 10:14:11,212 [INFO] Listando todos os jogos.
+2025-06-26 10:14:23,089 [INFO] Listando todos os gêneros.
+2025-06-26 10:14:42,390 [INFO] Gênero '""' encontrado.
+2025-06-26 10:14:42,390 [INFO] Gênero '""' encontrado.
+2025-06-26 10:14:42,391 [ERROR] Gênero '""' não pode ser removido porque está associado a jogos.
+2025-06-26 10:16:15,080 [INFO] Gênero '""' encontrado.
+2025-06-26 10:16:15,080 [INFO] Gênero '""' encontrado.
+2025-06-26 10:16:15,086 [INFO] Gênero '""' removido com sucesso.
+2025-06-26 10:51:48,164 [INFO] Jogo encontrado: dasdas
+2025-06-26 10:51:48,171 [INFO] Jogo 'dasdas' removido com sucesso.
+2025-06-26 11:34:54,665 [INFO] Listando todos os gêneros.

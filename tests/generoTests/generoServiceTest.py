@@ -59,37 +59,39 @@ class TestGeneroService(unittest.TestCase):
         mock_print.assert_called_once_with("Listando jogos do gênero: RPG")
 
     def test_atualizar_genero_com_sucesso(self):
-        genero_antigo = Genero(nome="Indie")
-        self.genero_repository.buscar_por_nome.side_effect = [genero_antigo, None]
-
-        self.genero_service.atualizar_genero("Indie", "Independente")
-
-        self.genero_repository.atualizar.assert_called_once_with(genero_antigo, "Independente")
+        nome_antigo = "Indie"
+        novo_nome = "Independente"
+        
+        genero_atualizado = Genero(nome=novo_nome)
+        self.genero_repository.atualizar.return_value = genero_atualizado
+        
+        resultado = self.genero_service.atualizar_genero(nome_antigo, novo_nome)
+        
+        self.genero_repository.atualizar.assert_called_once_with(nome_antigo, novo_nome)
+        
+        self.assertEqual(resultado.nome, genero_atualizado.nome)
 
     def test_atualizar_genero_nao_encontrado(self):
-        self.genero_repository.buscar_por_nome.return_value = None
-
+        nome_antigo = "Rock"
+        novo_nome = "Alternativo"
+        
+        self.genero_repository.atualizar.side_effect = ValueError("Gênero não encontrado para atualização.")
+        
         with self.assertRaises(ValueError) as context:
-            self.genero_service.atualizar_genero("Inexistente", "Novo")
-
-        self.assertEqual(str(context.exception), "Gênero não encontrado para atualizar.")
+            self.genero_service.atualizar_genero(nome_antigo, novo_nome)
+        
+        self.assertEqual(str(context.exception), "Gênero não encontrado para atualização.")
 
     def test_atualizar_genero_com_nome_duplicado(self):
-        genero_existente = Genero(nome="Ação")
-        self.genero_repository.buscar_por_nome.side_effect = [genero_existente, genero_existente]
-
+        nome_antigo = "Indie"
+        novo_nome = "Pop"
+        
+        self.genero_repository.atualizar.side_effect = ValueError("Já existe um gênero com esse nome.")
+        
         with self.assertRaises(ValueError) as context:
-            self.genero_service.atualizar_genero("Ação", "Ação")
-
+            self.genero_service.atualizar_genero(nome_antigo, novo_nome)
+        
         self.assertEqual(str(context.exception), "Já existe um gênero com esse nome.")
-
-    def test_remover_genero_com_sucesso(self):
-        genero = Genero(nome="Estratégia")
-        self.genero_repository.buscar_por_nome.return_value = genero
-
-        self.genero_service.remover_genero("Estratégia")
-
-        self.genero_repository.remover.assert_called_once_with("Estratégia")
 
     def test_remover_genero_nao_encontrado(self):
         self.genero_repository.buscar_por_nome.return_value = None

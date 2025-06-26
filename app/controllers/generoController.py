@@ -35,7 +35,6 @@ class GeneroController:
                 if not nome_excluir:
                     raise ValueError("Nome do gênero não pode ser vazio.")
                 self.genero_service.remover_genero(nome_excluir)
-                print(f"Gênero '{nome_excluir}' removido com sucesso.")
 
             elif opcao == "0":
                 return

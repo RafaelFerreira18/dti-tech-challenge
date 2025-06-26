@@ -38,9 +38,7 @@ class TestGeneroController(unittest.TestCase):
     @patch("builtins.print")
     def test_remover_genero_com_sucesso(self, mock_print, mock_input):
         self.controller.menu()
-
         self.genero_service.remover_genero.assert_called_once_with("Terror")
-        mock_print.assert_any_call("Gênero 'Terror' removido com sucesso.")
 
     @patch("builtins.input", return_value="x")
     @patch("builtins.print")
