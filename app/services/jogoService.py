@@ -5,17 +5,22 @@ class JogoService:
     def listar_jogos(self):
         return self.jogo_repository.listar_jogos()
 
-    def buscar_jogo_por_id(self, jogo_id):
-        return self.jogo_repository.buscar_jogo_por_id(jogo_id)
+    def buscar_jogo_por_nome(self, nome):
+        return self.jogo_repository.buscar_jogo_por_nome(nome)
+        
+    def adicionar_jogo(self, nome, descricao, data, generos, empresa, preco):
+        if self.jogo_repository.buscar_jogo_por_nome(nome):
+            raise ValueError("Já existe um jogo com esse nome.")
+        return self.jogo_repository.adicionar_jogo(nome, descricao, data, generos, empresa, preco)
 
-    def adicionar_jogo(self, nome):
-        return self.jogo_repository.adicionar_jogo(nome)
+    def atualizar_jogo(self, nome_antigo, novo_nome, descricao, data, generos, empresa, preco):
+        jogo = self.jogo_repository.buscar_jogo_por_nome(nome_antigo)
+        if not jogo:
+            raise ValueError("Jogo a ser atualizado não foi encontrado.")
+        return self.jogo_repository.atualizar_jogo(nome_antigo, novo_nome, descricao, data, generos, empresa, preco)
 
-    def adicionar_genero_ao_jogo(self, jogo, genero):
-        self.jogo_repository.adicionar_genero_ao_jogo(jogo, genero)
-
-    def listar_generos_do_jogo(self, jogo):
-        return self.jogo_repository.listar_generos_do_jogo(jogo)
-
-    def atualizar_jogo(self, jogo, novo_nome):
-        return self.jogo_repository.atualizar_jogo(jogo, novo_nome)
+    def remover_jogo(self, nome):
+        jogo = self.jogo_repository.buscar_jogo_por_nome(nome)
+        if not jogo:
+            raise ValueError("Jogo não encontrado.")
+        return self.jogo_repository.remover_jogo(nome)
