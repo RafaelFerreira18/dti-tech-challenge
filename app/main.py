@@ -1,13 +1,7 @@
-<<<<<<< dev
 from app.config.database import db
 from app.controllers import GeneroController, JogoController, MenuController
 from app.repositories import GeneroRepository, JogoRepository
 from app.services import GeneroService, JogoService
-=======
-from app.controllers.generoController import GeneroController
-from app.controllers.jogoController import JogoController
-from app.controllers.menuController import MenuController
->>>>>>> main
 
 
 def initialize_database():
