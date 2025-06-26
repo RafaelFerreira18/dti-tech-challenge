@@ -160,7 +160,7 @@ python -m unittest discover tests
 
 ## 📄 Logs da Aplicação
 
-Os logs de execução e testes são armazenados na pasta `logs/`, no arquivo `registro.log`.
+Os logs de execução são armazenados na pasta `logs/`, no arquivo `registro.log`.
 
 Para visualizar os logs após rodar a aplicação ou os testes:
 ## 📂 Estrutura de Pastas
