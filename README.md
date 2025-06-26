@@ -64,8 +64,8 @@ Esta aplicação é um sistema simples de gerenciamento de **jogos e gêneros**,
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
-   cd seu-repo
+   git clone https://github.com/RafaelFerreira18/dti-tech-challenge.git
+   cd dti-tech-challenge
    ```
 
 2. Crie e ative um ambiente virtual:
